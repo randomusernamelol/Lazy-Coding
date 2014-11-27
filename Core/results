@@ -1,0 +1,13 @@
+public class ClassName {
+
+		private String ID;
+		private int numbers;
+		private ArrayList<Book> booklist;
+
+	public ClassName(String ID, int numbers, ArrayList<Book> booklist, )
+	{
+		this.ID = ID;
+		this.numbers = numbers;
+		this.booklist = booklist;
+
+	}

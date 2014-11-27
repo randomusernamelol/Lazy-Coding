@@ -17,8 +17,9 @@ public class Code
 			in = sc.nextLine();
 			vl.add(Detection(in));
 		}
-		
+		sc.close();
 		return vl;
+		
 	}
 
 	public static Variable Detection(String td)

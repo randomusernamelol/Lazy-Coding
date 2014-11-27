@@ -4,6 +4,11 @@ public class Variable
 	private String type;
 	private String var_name;
 	
+	/**
+	 * 
+	 * @param type
+	 * @param var_name
+	 */
 	public Variable(String type, String var_name)
 	{
 		this.type = type;
