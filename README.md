@@ -1,6 +1,6 @@
 Lazy-Coding
 ===========
 
-Automated code for quickly creating objects
+Being lazy == fast
 
 Currently will only support Java
