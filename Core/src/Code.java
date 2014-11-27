@@ -14,10 +14,7 @@ public class Code
 		
 		while (sc.hasNext() == true)
 		{
-
 			in = sc.nextLine();
-
-
 			vl.add(Detection(in));
 		}
 		
@@ -30,32 +27,10 @@ public class Code
 		td = td.substring(8);
 	
 		String TypeDetected = TypeDetection(td);
-		// String
-		if (TypeDetected.equals("String"))
-		{
-			//remove "String "
-			td = td.substring(7);
-
-			System.out.println(VarDetection(td));
-			Variable String = new Variable("String", VarDetection(td));
-			
-			return String;
-		}
-		
-		// int
-		if (TypeDetected.equals("int"))
-		{
-			// remove "int "
-			td = td.substring(4);
-			Variable Int = new Variable("int", VarDetection(td));
-			
-			System.out.println(VarDetection(td));
-			return Int;
-		}
-				
-				
-		Variable empty = new Variable("error", "error");
-		return empty;
+												// removes all whitespace
+		td = td.substring(TypeDetected.length()).replaceAll("\\s+","");
+		Variable vars = new Variable(TypeDetected, VarDetection(td));
+		return vars;
 	}
 	
 	public static String VarDetection(String input)

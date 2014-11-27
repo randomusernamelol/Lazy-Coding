@@ -19,4 +19,9 @@ public class Variable
 	{
 		return var_name;
 	}
+	
+	public String toString()
+	{
+		return type + ":" + var_name + ";";
+	}
 }
