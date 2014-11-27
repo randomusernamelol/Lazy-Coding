@@ -3,8 +3,6 @@ Lazy-Coding
 
 Being lazy == fast
 
-<<<<<<< HEAD
-=======
 But really what is the deal?
 
 Basicaly the following:
@@ -27,5 +25,4 @@ Sure, if I've got nothing more important to do for 5hours.
 Why aren't you just using tool x?
 I like programming so I just made it myself.
 
->>>>>>> origin/master
 Currently will only support Java
