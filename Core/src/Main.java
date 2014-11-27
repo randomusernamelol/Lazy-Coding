@@ -8,10 +8,6 @@ public class Main
 	{
 		ArrayList<Variable> val = new ArrayList<Variable>();
 		val = Code.Parse("arguments");
-		
 		Writer.Write(val, "ClassName");
-		
-		for (int c = 0; c < 3; c++)
-			System.out.println(val.get(c).toString());
 	}
 }

@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -37,7 +36,7 @@ public class Writer
 		String a = "\n\tpublic " + "ClassName(";
 		for (int c = 0; c < vl.size(); c++)
 		{
-			if (c < vl.size())
+			if (c < vl.size()-1)
 			a += vl.get(c).getType() + " " + vl.get(c).getVarName() + ", ";
 			else
 			a += vl.get(c).getType() + " " + vl.get(c).getVarName();
@@ -47,10 +46,9 @@ public class Writer
 		"\t" + "{\n";
 		for (int c = 0; c < vl.size(); c++)
 		{
-			// note to self fix that an extra \n is not added at the end
 			a += "\t\tthis." + vl.get(c).getVarName() + " = " + vl.get(c).getVarName() + ";\n";
 		}
-		a += "\n\t}\n";
+		a += "\t}\n";
 		return a;
 	}
 }
