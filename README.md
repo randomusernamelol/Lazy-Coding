@@ -8,15 +8,11 @@ Being lazy == fast
 But really what is the deal?
 
 Basicaly the following:
-
 write the follwoing in a file:
 
 private int numbers;
-
 private String tag;
-
 private ArrayList<Book>;
-
 
 So what's next?
 
